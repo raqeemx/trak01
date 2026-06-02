@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "webapp",
+  "compatibility_date": "2026-04-13",
+  "pages_build_output_dir": "./dist",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+  // الأسرار (SUPABASE_URL / SUPABASE_ANON_KEY / SUPABASE_SERVICE_ROLE_KEY)
+  // تُضبط محلياً في .dev.vars، وفي الإنتاج عبر:
+  //   npx wrangler pages secret put SUPABASE_URL --project-name webapp
+}
